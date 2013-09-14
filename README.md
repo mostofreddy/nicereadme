@@ -14,5 +14,5 @@ Software bajo licencia [MIT](http://opensource.org/licenses/mit-license.php)
 Demo
 ----
 
-[HTML Export](http://mostofreddy.github.io/sesy/)
-[PDF Export](http://mostofreddy.github.io/sesy/download/sesy.pdf)
+- [HTML Export](http://mostofreddy.github.io/sesy/)
+- [PDF Export](http://mostofreddy.github.io/sesy/download/sesy.pdf)
