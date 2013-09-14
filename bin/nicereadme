@@ -1,0 +1,97 @@
+<?php
+/**
+ * NiceReadme
+ *
+ * PHP version 5.3
+ *
+ * Copyright (c) 2013 mostofreddy <mostofreddy@gmail.com>
+ * For the full copyright and license information, please view the LICENSE file that was distributed with this source code.
+ *
+ * @category   Bin
+ * @package    NiceReadme
+ * @subpackage Bin
+ * @author     Federico Lozada Mosto <mostofreddy@gmail.com>
+ * @copyright  2013 Federico Lozada Mosto <mostofreddy@gmail.com>
+ * @license    MIT License (http://www.opensource.org/licenses/mit-license.php)
+ * @link       http://www.mostofreddy.com.ar
+ */
+$rootpath = realpath(__DIR__."/../")."/";
+require_once $rootpath."vendor/autoload.php";
+
+$writer = new \cliptools\Writer();
+$opts = new \cliptools\Arguments();
+$app = new \nicereadme\Application();
+
+//seteo de todos los flags de configuración
+$opts->addFlag(
+    array('h', 'help'),
+    array(
+        'description' => 'Imprime la ayuda y finaliza'
+    )
+);
+//obligatorios
+$opts->addFlag(
+    array('target'),
+    array(
+        'description' => 'Path del archivo readme'
+    )
+);
+$opts->addFlag(
+    array('output'),
+    array(
+        'description' => 'Directorio de salida de la exportación'
+    )
+);
+
+
+//opcionales
+$opts->addFlag(
+    array('exportto'),
+    array(
+        'description' => 'Formato de exportación. [html, pdf] (Default: html)',
+        'default' => "html"
+    )
+);
+$opts->addFlag(
+    array('i', 'index'),
+    array(
+        'description' => 'Indica si crea el indice o no. [true, false]',
+        'default' => false
+    )
+);
+$opts->addFlag(
+    array('title'),
+    array(
+        'description' => 'Titulo del documento de exportación',
+        'default' => ""
+    )
+);
+$opts->addFlag(
+    array('copyright'),
+    array(
+        'description' => 'Nombre de los derechos de autor',
+        'default' => ""
+    )
+);
+
+
+
+$opts->addFlag(
+    array('template'),
+    array(
+        'description' => 'Template a utilizar. [basedark, baselight] (Opcional)',
+        'default' => "simple"
+    )
+);
+$opts->addFlag(
+    array('forkme'),
+    array(
+        'description' => 'Url para descargar el proyecto.',
+        'default' => ""
+    )
+);
+$opts->proccess();
+
+$app->setWriter($writer);
+$app->setOpts($opts);
+$app->run();

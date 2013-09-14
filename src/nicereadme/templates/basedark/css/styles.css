@@ -1,0 +1,31 @@
+body {
+    padding-top: 50px;
+    background: url(../images/px_by_Gre3g.png);
+}
+
+#footerphpmdtohtml {
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top:1px solid #efefef;
+    color: #999999;
+}
+
+.forkme {
+    z-index:1100 !important;
+    position: fixed;
+    top:0;
+    right:0;
+}
+
+.forkme a {
+    z-index:1100 !important;
+}
+
+.forkme a img {
+    z-index:1100 !important;
+}
+
+.container-body {
+    background-color:#fff;
+}
