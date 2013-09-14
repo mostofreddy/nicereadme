@@ -1,7 +1,7 @@
 {
     "name": "mostofreddy/nicereadme",
-    "description": "Create beautifull README",
-    "keywords": ["markdown", "md", "html", "format", "template"],
+    "description": "NiceReadme permite crear hermosa documentacion en html y pdf basandose en archivos Markdown",
+    "keywords": ["markdown", "md", "html", "format", "template", "documentation", "readme", "pdf"],
     "homepage": "http://github.com/mostofreddy/nicereadme",
     "type": "library",
     "license": "MIT",
