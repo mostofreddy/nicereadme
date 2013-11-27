@@ -27,7 +27,7 @@ namespace nicereadme;
  */
 class Application extends \cliptools\Cli
 {
-    const VERSION="0.4.0";
+    const VERSION="0.4.2";
 
     protected $deps = array(
         'md' => '\nicereadme\Md',
@@ -47,7 +47,7 @@ class Application extends \cliptools\Cli
         $this->writer->nl();
         $txt = <<<TXT
 Usage:
- php bin/phpmd2html.php [hi] --target=/paht/to/file.md --output=/path/to/output [--index] [--title="title"] [--template=simple]
+    php bin/nicereadme.php [hi] --target=/paht/to/file.md --output=/path/to/output [--help] [--template=<template>] [--exportto=<exportto>] [--title=<title>] [--filename=<filename>] [--copyright=<copyright>] [--forkme=<forkme>]
 
 
 TXT;

@@ -6,7 +6,7 @@ NiceReadme permite crear hermosa documentación en html y pdf basandose en archi
 Versión
 -------
 
-__v0.4.1__ stable
+__v0.4.2__ stable
 
 Features
 --------
