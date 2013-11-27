@@ -6,7 +6,7 @@ NiceReadme permite crear hermosa documentación en html y pdf basandose en archi
 Versión
 -------
 
-__v0.4.0__ stable
+__v0.4.1__ stable
 
 Features
 --------
@@ -49,4 +49,9 @@ Demo
 ----
 
 - [HTML Export](http://mostofreddy.github.io/nicereadme/)
-- [PDF Export](http://mostofreddy.github.io/nicereame/download/nicereadme_v040.pdf)
+- [PDF Export](http://mostofreddy.github.io/nicereadme/download/nicereadme_v040.pdf)
+
+Roadmap & issues
+----------------
+
+[Roadmap & issues](https://github.com/mostofreddy/nicereadme/issues/milestones)
