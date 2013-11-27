@@ -40,6 +40,11 @@ Instalación
         "mostofreddy/nicereadme": "0.*",
     }
 
+Ejemplo
+-------
+
+    php nicereadme --target=/var/www/nicereadme/README.md --output=/var/www/nicereadme/doc --exportto=pdf --title="Documentation of NiceReadme" --filename="nicereadme" --copyright="Mostofreddy"
+
 Demo
 ----
 
