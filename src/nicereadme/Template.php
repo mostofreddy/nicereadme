@@ -28,10 +28,10 @@ use Sunra\PhpSimple\HtmlDomParser;
  */
 class Template
 {
-    protected $title = '';
     protected $content = '';
     protected $pathtotemplate = '';
     protected $pathToOutput = '';
+    protected $title = '';
     protected $copyright = '';
     protected $forkme = '';
     protected $index = false;

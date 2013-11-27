@@ -27,7 +27,7 @@ namespace nicereadme;
  */
 class Application extends \cliptools\Cli
 {
-    const VERSION="0.2.2";
+    const VERSION="0.4.0";
 
     protected $deps = array(
         'md' => '\nicereadme\Md',
@@ -125,7 +125,7 @@ TXT;
      */
     protected function head()
     {
-        $this->writer->colorize("PHPMD2HTML ".static::VERSION." by Mostofreddy", "yellow")->nl();
+        $this->writer->colorize("NiceReadme ".static::VERSION." by Mostofreddy", "yellow")->nl();
     }
     /**
      * Valida los valores de entrada
@@ -150,7 +150,13 @@ TXT;
             $this->writer->colorize(" Error ", "white", "red")
                 ->write(" No se indico el output ");
             return false;
+        } else {
+            $output = $this->opts->get('output');
+            if ($output[strlen($output) - 1] != '/') {
+                $this->opts->set('output', $output.'/');
+            }
         }
+
         if (!is_writable($this->opts->get('output'))) {
             $this->writer->colorize(" Error ", "white", "red")
                 ->write(" No se puede escribir en el output ");

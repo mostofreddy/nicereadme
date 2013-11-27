@@ -42,7 +42,13 @@ $opts->addFlag(
         'description' => 'Directorio de salida de la exportación'
     )
 );
-
+$opts->addFlag(
+    array('template'),
+    array(
+        'description' => 'Template a utilizar. [basedark, baselight] (Opcional)',
+        'default' => "baselight"
+    )
+);
 
 //opcionales
 $opts->addFlag(
@@ -52,6 +58,11 @@ $opts->addFlag(
         'default' => "html"
     )
 );
+
+
+
+
+
 $opts->addFlag(
     array('i', 'index'),
     array(
@@ -73,16 +84,6 @@ $opts->addFlag(
         'default' => ""
     )
 );
-
-
-
-$opts->addFlag(
-    array('template'),
-    array(
-        'description' => 'Template a utilizar. [basedark, baselight] (Opcional)',
-        'default' => "simple"
-    )
-);
 $opts->addFlag(
     array('forkme'),
     array(
@@ -90,6 +91,7 @@ $opts->addFlag(
         'default' => ""
     )
 );
+
 $opts->proccess();
 
 $app->setWriter($writer);
