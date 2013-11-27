@@ -1,7 +1,7 @@
 {
     "name": "mostofreddy/nicereadme",
-    "description": "NiceReadme permite crear hermosa documentacion en html y pdf basandose en archivos Markdown",
-    "version": "0.4.0",
+    "description": "Create beautiful documentation in html and pdf files basing Markdown",
+    "version": "0.4.1",
     "keywords": ["markdown", "md", "html", "format", "template", "documentation", "readme", "pdf"],
     "homepage": "http://github.com/mostofreddy/nicereadme",
     "type": "library",
