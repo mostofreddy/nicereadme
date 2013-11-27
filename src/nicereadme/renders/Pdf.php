@@ -93,7 +93,7 @@ class Pdf
         $mpdf->SetAuthor($this->config['copyright']);
 
         //output
-        $mpdf->Output(realpath($this->config['output'])."/file.pdf");
+        $mpdf->Output(realpath($this->config['output'])."/".$this->config['filename'].".pdf");
     }
 
     /**

@@ -58,6 +58,21 @@ $opts->addFlag(
         'default' => "html"
     )
 );
+$opts->addFlag(
+    array('title'),
+    array(
+        'description' => 'Titulo del documento al exportar como pdf',
+        'default' => ""
+    )
+);
+
+$opts->addFlag(
+    array('filename'),
+    array(
+        'description' => 'Nombre del archivo PDF (Default: documentation)',
+        'default' => "documentation"
+    )
+);
 
 
 
@@ -68,13 +83,6 @@ $opts->addFlag(
     array(
         'description' => 'Indica si crea el indice o no. [true, false]',
         'default' => false
-    )
-);
-$opts->addFlag(
-    array('title'),
-    array(
-        'description' => 'Titulo del documento de exportación',
-        'default' => ""
     )
 );
 $opts->addFlag(

@@ -182,6 +182,15 @@ TXT;
                 ->write(" El formato de exportación es incorrecto. Las opciones válidas son: pdf, html ");
             return false;
         }
+
+        if ($this->opts->get('exportto') == 'pdf') {
+            $aux = $this->opts->get('filename');
+            if (empty($aux)) {
+                $this->writer->colorize(" Error ", "white", "red")
+                    ->write(" No definio el nombre del archivo pdf ");
+                return false;
+            }
+        }
         return true;
     }
 }
