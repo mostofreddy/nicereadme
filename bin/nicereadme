@@ -54,7 +54,7 @@ $opts->addFlag(
 $opts->addFlag(
     array('exportto'),
     array(
-        'description' => 'Formato de exportación. [html, pdf] (Default: html)',
+        'description' => 'Formato de exportación. [html, pdf]',
         'default' => "html"
     )
 );
@@ -69,12 +69,25 @@ $opts->addFlag(
 $opts->addFlag(
     array('filename'),
     array(
-        'description' => 'Nombre del archivo PDF (Default: documentation)',
+        'description' => 'Nombre del archivo PDF',
         'default' => "documentation"
     )
 );
 
-
+$opts->addFlag(
+    array('copyright'),
+    array(
+        'description' => 'Template flag: Nombre de los derechos de autor',
+        'default' => ""
+    )
+);
+$opts->addFlag(
+    array('forkme'),
+    array(
+        'description' => 'Template flag: Url para descargar el proyecto.',
+        'default' => ""
+    )
+);
 
 
 
@@ -85,20 +98,8 @@ $opts->addFlag(
         'default' => false
     )
 );
-$opts->addFlag(
-    array('copyright'),
-    array(
-        'description' => 'Nombre de los derechos de autor',
-        'default' => ""
-    )
-);
-$opts->addFlag(
-    array('forkme'),
-    array(
-        'description' => 'Url para descargar el proyecto.',
-        'default' => ""
-    )
-);
+
+
 
 $opts->proccess();
 
