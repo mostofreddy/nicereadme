@@ -1,0 +1,110 @@
+<html>
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- jquery -->
+    <script src="js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- custom -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!-- NAVBAR -->
+    <!--
+    <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"></a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    -->
+    <!-- BODY -->
+    <div class="container container-body">
+        <h1>NiceReadme</h1>
+
+<p>NiceReadme permite crear hermosa documentación en html y pdf basandose en archivos Markdown</p>
+
+<h2>Versión</h2>
+
+<p><strong>v0.4.0</strong> stable</p>
+
+<h2>Features</h2>
+
+<ul>
+<li>Exportación a HTML</li>
+<li>Exportación a PDF</li>
+</ul>
+
+<h2>Licencia</h2>
+
+<p>Software bajo licencia <a href="http://opensource.org/licenses/mit-license.php">MIT</a></p>
+
+<h2>Instalación</h2>
+
+<h3>Requerimientos</h3>
+
+<ul>
+<li>PHP => 5.3</li>
+<li><a href="http://getcomposer.org">Composer</a></li>
+</ul>
+
+<h3>github</h3>
+
+<pre><code>cd /var/www
+git clone https://github.com/mostofreddy/nicereadme.git
+cd nicereadme
+composer install
+</code></pre>
+
+<h3>composer</h3>
+
+<pre><code>"require": {
+    "php": "&gt;=5.3.0",
+    "mostofreddy/nicereadme": "0.*",
+}
+</code></pre>
+
+<h2>Ejemplo</h2>
+
+<pre><code>php nicereadme --target=/var/www/nicereadme/README.md --output=/var/www/nicereadme/doc --exportto=pdf --title="Documentation of NiceReadme" --filename="nicereadme" --copyright="Mostofreddy"
+</code></pre>
+
+<h2>Demo</h2>
+
+<ul>
+<li><a href="http://mostofreddy.github.io/nicereadme/">HTML Export</a></li>
+<li><a href="http://mostofreddy.github.io/nicereame/download/nicereadme_v040.pdf">PDF Export</a></li>
+</ul>
+<div id="footerphpmdtohtml">
+    <p class="">
+        Documentation is powered by <a href="https://github.com/mostofreddy/nicereadme">nicereadme</a>
+        and generated on Wed, 27 Nov 2013 09:19:30 -0300. <br/>
+        © Copyright 2013 - Mostofreddy
+    </p>
+</div><div class="forkme">
+    <a href="https://github.com/mostofreddy/nicereadme" >
+        <img style="position: absolute; top: 0; right: 0; border: 0;"
+            src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"
+        />
+    </a>
+</div>
+    </div>
+
+</body>
+</html>
