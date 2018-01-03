@@ -1,5 +1,6 @@
-NiceReadme
-==========
+**Deprecado**
+
+-- ---
 
 NiceReadme permite crear hermosa documentación en html y pdf basandose en archivos Markdown
 
